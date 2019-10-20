@@ -1,1 +1,18 @@
-Название эламента: <%= name %>
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div style="color: whitesmoke; background-color: #1bee3e; width: 100px; height:30px; text-align: center; border: 2px solid greenyellow" id="to-menu">
+            В меню
+        </div>
+
+        Название эламента: <%= element.name %>
+        <script>
+            $('#to-menu').click(function(){
+                window.location.replace('<%= menuLocation %>');
+            });
+        </script>
+    </body>
+</html>
