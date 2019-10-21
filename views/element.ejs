@@ -2,14 +2,26 @@
 <html>
     <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <style>
+                #to-menu {
+                    color: whitesmoke;
+                    background-color: #1bee3e;
+                    width: 100px;
+                    height:30px;
+                    text-align: center;
+                    border: 2px solid black;
+                }
+                #description {
+                    color: darkslategray;
+                }
+            </style>
     </head>
     <body>
-        <div style="color: whitesmoke; background-color: #1bee3e; width: 100px; height:30px; text-align: center; border: 2px solid greenyellow" id="to-menu">
-            В меню
-        </div>
+        <div id="to-menu">В меню</div>
 
         Название эламента: <%= element.name %>
         <img src="/<%= element.image %>" height="300px" width="300px"/>
+        <p id="description"><%= element.description %></p>
         <script>
             $('#to-menu').click(function(){
                 window.location.replace('<%= menuLocation %>');

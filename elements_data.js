@@ -1,18 +1,18 @@
 module.exports = [
     {
         name: 'Водород',
-        image: 'drawable/H.png'
+        folder_name: 'H'
     },
     {
         name: 'Гелий',
-        image: 'drawable/He.jpg'
+        folder_name: 'He'
     },
     {
         name: 'Литий',
-        image: 'drawable/Li.jpg'
+        folder_name: 'Li'
     },
     {
         name: 'Бериллий',
-        image: 'drawable/Be.jpg'
+        folder_name: 'Be'
     }
 ];
