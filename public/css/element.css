@@ -1,0 +1,39 @@
+@font-face {
+  font-family: AvantGarde-demi;
+  src: url('fonts/demi.otf');
+}
+@font-face {
+  font-family: AvantGarde-book;
+  src: url('fonts/book.otf');
+}
+* {
+  font-family: AvantGarde-demi;
+}
+#element-lat-name {
+  font-family: AvantGarde-book;
+}
+#element-number {
+  padding: 0 0 1.5vh 0;
+  vertical-align: bottom;
+  font-size: 12vw;
+  color: white;
+}
+#header-table {
+  width: 100%;
+  background-color: #e05a31;
+}
+#header-table td {
+}
+#element-letters {
+  font-size: 38vw;
+  color: #161616;
+}
+#element-info {
+  padding: 1.5vh 0 1.5vh 9vw;
+  text-align: left;
+  font-size: 4vw;
+  color: black;
+}
+#header-table tr {
+  /* height: 50px; */
+}
