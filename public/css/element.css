@@ -9,7 +9,7 @@
 * {
   font-family: AvantGarde-demi;
 }
-#element-lat-name {
+#element-lat-name, p {
   font-family: AvantGarde-book;
 }
 #element-number {
@@ -21,8 +21,7 @@
 #header-table {
   width: 100%;
   background-color: #e05a31;
-}
-#header-table td {
+  margin-bottom: 2vh;
 }
 #element-letters {
   font-size: 38vw;
@@ -34,6 +33,12 @@
   font-size: 4vw;
   color: black;
 }
-#header-table tr {
-  /* height: 50px; */
+h4 {
+  margin: 0;
+  padding: 1.5vh 0 1.5vh 10vw;
+}
+p {
+  padding: left;
+  margin: 0;
+  margin-left: 12vw;
 }
