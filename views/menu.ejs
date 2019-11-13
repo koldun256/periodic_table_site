@@ -17,12 +17,7 @@
     Это меню
     <% console.log(elements);%>
     <% for(let i = 0;i < elements.length;i++){ %>
-    
-    <div class="element" id="<%=i%>"><%=
-        elements[i].name
-        
-        %></div> 
-    
+        <div class="element" id="<%=i%>"><%=elements[i].name%></div> 
     <% } %>
     <script>
         $('.element').click(function(event){

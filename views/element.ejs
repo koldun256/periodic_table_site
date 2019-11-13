@@ -1,27 +1,28 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/css/element.css">
+  <meta charset="windows-1251">
 </head>
 <body style="margin: 0">
-  <table id="header-table">
+  <table id="header-table" style="background-color:<%= element["color"] %>">
     <tr class="header-table-row">
-      <td id="element-letters" colspan="2"><div style="margin: -9.3vw 0 -8.3vw -2.8vw">Mg</div></td>
+      <td id="element-letters" colspan="2"><div style="margin: -9.3vw 0 -8.3vw -2.8vw"><%= element.letters %></div></td>
     </tr>
     <tr class="header-table-row">
       <td id="element-info">
-        Водород<br/>
-        <span id="element-lat-name">Hydrogenium</span><br/>
-        |1,00794|
+        <%= element["ru-name"] %><br/>
+        <span id="element-lat-name"><%= element["lat-name"] %></span><br/>
+        <%=element["mass"]%>
       </td>
-      <td id="element-number"><div style="margin: 0 -2.5vw 0 0">001</div></td>
+      <td id="element-number"><div style="margin: 0 -2.5vw 0 0"><%=element.number%></div></td>
     </tr>
   </table>
     <h4>Химический элемент</h4>
-    <p style="font-size: 10px">Пускай марганец только 14-ый по распространённости химический элемент на Земле, у него необычайно важная металлургическая миссия: c его помощью из сталей удаляют кислород и серу ввиду</p>
+    <p><%=element.texts[0]%></p>
     <h4>Устройство</h4>
-    <p style="font-size: 10px">Пускай марганец только 14-ый по распространённости химический элемент на Земле, у него необычайно важная металлургическая миссия: c его помощью из сталей удаляют кислород и серу ввиду</p>
+    <p><%=element.texts[1]%></p>
     <h4>Минерал</h4>
-    <p style="font-size: 10px">Пускай марганец только 14-ый по распространённости химический элемент на Земле, у него необычайно важная металлургическая миссия: c его помощью из сталей удаляют кислород и серу ввиду</p>
+    <p><%=element.texts[2]%></p>
 </body>
 </html>
