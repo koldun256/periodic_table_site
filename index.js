@@ -21,7 +21,7 @@ app.set('view engine','ejs');
 app.get('/element/:id',(req, res)=>{
     let number = parseInt(req.params['id']);
     let folder = elements_data[number];
-    console.log(folder);
+
     let element = JSON.parse(fs.readFileSync(path.join( 'public',
                                                         'elements',
                                                         folder,
